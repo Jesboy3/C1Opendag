@@ -1,0 +1,125 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+header {
+    background-color: #61bb64;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+p{
+    font-size: large;
+}
+
+/* Rooster en Layout secties */
+.schedule, .layout {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.schedule-img, .layout-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Grid styling voor de vakken */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolommen */
+    gap: 20px; /* Ruimte tussen de items */
+    padding: 20px;
+    max-width: 900px; /* Maximale breedte van de grid */
+    margin: 0 auto; /* Center de grid-container op de pagina */
+}
+
+.grid-item {
+    text-align: center;
+    border: #333 solid 1px;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.grid-item img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 15px    ;
+    border-bottom: #333 solid 1px;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #555;
+    padding: 10px;
+}
+
+/* Styling voor de h2 */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #333;
+}
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+/* Media query voor kleinere schermen */
+@media (max-width: 768px) {
+    .layout-img {
+        max-width: 90%; /* Zorgt ervoor dat de afbeelding op kleinere schermen kleiner is */
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolommen op kleinere schermen */
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-img {
+        max-width: 100%; /* Op zeer kleine schermen zoals mobiele telefoons */
+    }
+}
